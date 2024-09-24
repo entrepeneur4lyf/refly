@@ -134,8 +134,6 @@ model ChatMessage {
   createdAt             DateTime    @default(now()) @map("created_at") @db.Timestamptz()
   /// Update timestamp
   updatedAt             DateTime    @updatedAt @map("updated_at") @db.Timestamptz()
-  /// 会话选中 Weblink 配置，未来可能会变，先使用 string 保存
-  selectedWeblinkConfig String?     @map("selected_weblink_config")
 
   @@index([convId, updatedAt])
   @@map("chat_messages")
@@ -147,7 +145,7 @@ model TokenUsage {
   /// UID
   uid              String   @map("uid")
   /// Conversation ID
-  convId           String   @map("conv_id")
+  convId           String?  @map("conv_id")
   /// Skill job ID
   jobId            String   @map("job_id")
   /// Span id
