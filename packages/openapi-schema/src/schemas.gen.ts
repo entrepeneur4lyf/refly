@@ -2535,11 +2535,11 @@ export const $InvokeSkillRequest = {
     },
     locale: {
       type: 'string',
-      description: 'user selected output locale',
+      description: 'Selected output locale',
     },
     modelName: {
       type: 'string',
-      description: 'user selected output model',
+      description: 'Selected model',
     },
     createConvParam: {
       description: 'Create conversation parameters',

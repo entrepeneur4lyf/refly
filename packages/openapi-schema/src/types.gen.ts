@@ -1785,11 +1785,11 @@ export type InvokeSkillRequest = {
    */
   convId?: string;
   /**
-   * user selected output locale
+   * Selected output locale
    */
   locale?: string;
   /**
-   * user selected output model
+   * Selected model
    */
   modelName?: string;
   /**
