@@ -40,6 +40,10 @@ export class MiscController {
   @UseGuards(JwtAuthGuard)
   @Post('upload')
   @UseInterceptors(FileInterceptor('file'))
+  @Header('Access-Control-Allow-Origin', '*')
+  @Header('Access-Control-Allow-Credentials', 'true')
+  @Header('Access-Control-Allow-Methods', 'POST, OPTIONS')
+  @Header('Access-Control-Allow-Headers', 'Content-Type, Authorization')
   async uploadStaticFile(
     @User() user: UserModel,
     @UploadedFile() file: Express.Multer.File,
