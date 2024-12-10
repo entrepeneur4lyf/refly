@@ -103,7 +103,10 @@ export const useCanvasStore = create<CanvasState>()(
     })),
     {
       name: 'canvas-storage',
-      partialize: (state) => ({ data: state.data, currentCanvasId: state.currentCanvasId }),
+      partialize: (state) => ({
+        // data: state.data,
+        currentCanvasId: state.currentCanvasId,
+      }),
     },
   ),
 );
