@@ -46,7 +46,7 @@
     "hotkeys-js": "~3.10.2",
     "i18next": "^23.11.2",
     "is-hotkey": "~0.2.0",
-    "katex": "0.15.6",
+    "katex": "0.16.21",
     "lodash.debounce": "~4.0.8",
     "lodash.throttle": "~4.1.1",
     "md5": "^2.3.0",
